@@ -1,0 +1,571 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background-color: #F8F9FA;
+	position: relative;
+	font-family: 'poppinsLight';
+}
+h2{
+	font-weight: bolder;
+}
+nav{
+	position: fixed;
+	width: 100%;
+	padding: 5px 80px 5px 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 10;
+	
+}
+nav ul {
+	display: flex;
+	width: 40%;
+	margin-top: 10px;
+	margin-left: -40px;
+	list-style-type: none;
+	justify-content: space-between;
+	align-items: center;
+	
+	height: 40px;
+}
+
+nav .logo h1{
+	color: black;
+	font-size: 40px;
+	transition: .5s;
+}
+
+nav ul a{
+	display: block;
+	color: black;
+	text-decoration: none;
+	transition: .3s;
+}
+
+nav ul li a:hover{
+	color: black;
+	transform: scale(1.1);
+
+}
+nav ul li{
+	width: 90px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	transition: .1s;
+}
+nav ul li:hover{
+	border-bottom: 2px solid #ccc;
+}
+
+nav ul li ul{
+	width: 200px;
+}
+nav ul li ul li a{
+	transition: .5s;
+}
+nav ul li ul li:hover a{
+	color: black;
+	transform: translateX(20px);
+}
+
+
+nav .menu-toggle{
+	display: none;
+	
+	flex-direction: column;
+	height: 20px;
+	justify-content: space-between;
+	position: relative;
+}
+nav .menu-toggle span{
+	display: block;
+	width: 28px;
+	height: 3px;
+	background-color: #383636;
+	border-radius: 3px;
+	transition: all .5s;
+}
+nav .menu-toggle input{
+	position: absolute;
+	width: 40px;
+	height: 28px;
+	opacity: 0;
+	left: -6px;
+	top: -3px ;
+	cursor: pointer;
+	z-index: 2;
+}
+/*awal video*/
+.mp4{
+		width: 100%;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+	}
+	.mp4 video{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	.mp4 .content{
+		position: absolute;
+		color: white;
+	}
+	.mp4 .content h1{
+		font-size: 80px;
+	}
+/*akhir video*/
+
+/*awal img*/
+.row .col-md-6 img,
+.row .col-md-4 img{
+ 	width: 100%;
+ 	height: 100%;
+ }
+
+
+/*akhir img*/
+section.tiga .container .row .col-md-6 iframe{
+	width: 100%;
+	height: 100%;
+}
+
+/*halaman category*/
+.bungkus-carousel-inner{
+	position: relative;
+}
+.bungkus-carousel-inner::before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5));
+	z-index: 9;
+
+}
+.bungkus-carousel-inner .judul-category{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-size: 85px;
+	color: white;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+	z-index: 10;
+}
+
+.bungkus-carousel-inner .link-menu{
+	margin-top: 85px;
+	margin-left: -12px;
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+	z-index: 10;
+	
+}
+/*booking*/
+.jumbotron-booking{
+	width: 100%;
+	height: 550px;
+	position: relative;
+}
+.jumbotron-booking img{
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+}
+.jumbotron-booking::before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5));
+	z-index: 9;
+
+}
+.jumbotron-booking .judul-content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-size: 85px;
+	color: white;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+	z-index: 10;
+}
+
+.jumbotron-booking .link-menu{
+	margin-top: 85px;
+	margin-left: -12px;
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	position: absolute;
+	z-index: 10;
+	
+}
+
+
+
+/*.secbooking{
+	margin-top: 125px;
+}*/
+/*chat langsung*/
+.chatLangsung{
+	width: 60px;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	z-index: 10;
+	bottom: 20px;
+	right: 20px;
+	border-radius: 50%;
+	font-size: 40px;
+	background-color: #F8F9FA;
+}
+.offcanvas .offcanvas-body ul li a{
+	display: block;
+	transition: .3s;
+}
+.offcanvas .offcanvas-body ul li:hover a{
+	transform: scale(1.1);
+}
+
+footer{
+	margin-top: 100px;
+	background: linear-gradient(45deg ,rgba(255,255,255,.3),rgba(255,255,255,.3),rgba(0,0,0,.2));
+}
+footer .container .row .col-md-4 ul{
+	list-style-type: none;
+}
+footer .container .row .col-md-4 ul li{
+	margin-bottom: 10px;
+}
+/*Akhir Footer*/
+/*awal copyright*/
+.copy{
+	background: linear-gradient(45deg ,rgba(255,255,255,.3),rgba(255,255,255,.3),rgba(0,0,0,.2));
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+
+}
+.copy p{
+	color: #201f1f;
+}
+.copy a{
+	margin-top: -15px;
+	color: #201f1f;
+	text-decoration: none;
+}
+.copy a:hover{
+	color: white;
+}
+@font-face{
+	font-family: 'poppinsLight';
+	 src: url('../font/Poppins-Light.ttf')format('truetype');
+}
+@font-face{
+	font-family: 'lobster';
+	 src: url('../font/Lobster-Regular.ttf')format('truetype');
+}
+@media screen and (max-width: 1280.98px){
+	
+	section .row .col-md-6 h2{
+		margin-top: 30px;
+	}
+	nav{
+		padding: 10px 50px 10px 50px;
+	}
+	
+	.jumbotron-booking::before{
+		height: 100vh;
+	}
+	.jumbotron-booking h1.judul-content{
+
+		font-size: 90px;
+	}
+	i.kanan{
+		margin-top: -50px;
+	}
+	.link-menu li h3{
+		margin-top: 20px;
+		margin-left: -5px;
+		font-size: 25px;
+	}
+	.bungkus-carousel-inner h1.judul-category{
+		font-size: 70x;
+	}
+
+}
+@media screen and (max-width: 1024.98px){
+	
+	section .row .col-md-6 h2{
+		margin-top: 30px;
+	}
+	nav{
+		padding: 10px 50px 10px 50px;
+	}
+	nav ul{
+		display: none;
+	}
+	nav .menu-toggle{
+	
+		display: flex;
+	}
+	.jumbotron-booking::before{
+		height: 100%;
+	}
+	.jumbotron-booking h1.judul-content{
+		font-size: 70px;
+	}
+	i.kanan{
+		margin-top: -50px;
+	}
+	.link-menu li h3{
+		margin-top: 20px;
+		margin-left: -5px;
+		font-size: 25px;
+	}
+	.bungkus-carousel-inner h1.judul-category{
+		font-size: 70x;
+	}
+}
+@media screen and (max-width: 868.98px){
+
+	section .row .col-md-6 h2{
+		margin-top: 30px;
+	}
+	nav{
+		padding: 10px 50px 10px 50px;
+	}
+	nav ul{
+		display: none;
+	}
+	nav .menu-toggle{
+	
+		display: flex;
+	}
+	.jumbotron-booking::before{
+		height: 100%;
+	}
+	.jumbotron-booking h1.judul-content{
+		font-size: 70px;
+	}
+	i.kanan{
+		margin-top: -50px;
+	}
+	.link-menu li h3{
+		margin-top: 20px;
+		margin-left: -5px;
+		font-size: 25px;
+	}
+	.bungkus-carousel-inner h1.judul-category{
+		font-size: 70x;
+	}
+}
+@media screen and (max-width: 768.98px){
+	
+	section .row .col-md-6 h2{
+		margin-top: 30px;
+	}
+	nav{
+		padding: 10px 50px 10px 50px;
+	}
+	nav ul{
+		display: none;
+	}
+	nav .menu-toggle{
+	
+		display: flex;
+	}
+	.mp4{
+		width: 100%;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+	}
+	.mp4 video{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	.mp4 .content{
+		position: absolute;
+		color: white;
+	}
+	.mp4 .content h1{
+		font-size: 40px;
+	}
+	.jumbotron-booking::before{
+		height: 100%;
+	}
+	.jumbotron-booking h1.judul-content{
+		font-size: 70px;
+	}
+	i.kanan{
+		margin-top: -50px;
+	}
+	.link-menu li h3{
+		margin-top: -40px;
+		margin-left: -5px;
+		font-size: 25px;
+	}
+	.bungkus-carousel-inner h1.judul-category{
+		font-size: 70px;
+	}
+}
+@media screen and (max-width: 576.98px){
+	
+	section .row .col-md-6 h2{
+		margin-top: 30px;
+	}
+	nav{
+		padding: 10px 50px 10px 50px;
+	}
+	
+	nav ul{
+		display: none;
+	}
+	nav .menu-toggle{
+	
+		display: flex;
+	}
+	.mp4{
+		width: 100%;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+	}
+	.mp4 video{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	.mp4 .content{
+		position: absolute;
+		color: white;
+	}
+	.mp4 .content h1{
+		font-size: 30px;
+	}
+	.jumbotron-booking::before{
+		height: 100%;
+	}
+	.jumbotron-booking h1.judul-content{
+		font-size: 30px;
+	}
+	i.kanan{
+		margin-top: -50px;
+	}
+	.link-menu li h3{
+		margin-top: -40px;
+		margin-left: -5px;
+		font-size: 15px;
+	}
+	.bungkus-carousel-inner h1.judul-category{
+		font-size: 30px;
+	}
+	.copy p,
+	.copy a{
+		font-size: 12px;
+	}
+	.chatlangsung{
+		bottom: 100px;
+	}
+	
+}
+@media screen and (max-width: 320.98px){
+	nav{
+		margin-top: -2px
+	}
+	section .row .col-md-6 h2{
+		margin-top: 30px;
+	}
+	nav{
+		padding: 10px 50px 10px 50px;
+	}
+	nav ul{
+		display: none;
+	}
+	nav .menu-toggle{
+		display: flex;
+	}
+	.mp4{
+		width: 100%;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+	}
+	.mp4 video{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	.mp4 .content{
+		position: absolute;
+		color: white;
+	}
+	.mp4 .content h1{
+		font-size: 25px;
+	}
+	.jumbotron-booking::before{
+		height: 100%;
+	}
+	i.kanan{
+		margin-top: -50px;
+	}
+	.jumbotron-booking h1.judul-content{
+		font-size: 30px;
+	}
+	.link-menu li h3{
+		margin-top: -40px;
+		margin-left: -5px;
+		font-size: 20px;
+	}
+	.bungkus-carousel-inner h1.judul-category{
+		font-size: 30px;
+	}
+	.copy p,
+	.copy a{
+		font-size: 12px;
+	}
+	.chatlangsung{
+		bottom: 100px
+	}
+}
